@@ -162,8 +162,7 @@ contains
   end subroutine RANDOM_CHORD
 
 ! **********************************************************************************************************************************************************
-
-  ! call A: chord cell
+  ! cell A: chord cell
   subroutine CELL_A(previous_dynamic)
     integer, intent(INOUT) :: previous_dynamic
     integer, dimension(4) :: pitch_vector
@@ -247,6 +246,7 @@ contains
   end subroutine CELL_A
   
 ! **********************************************************************************************************************************************************
+  ! cell B: tremolo cell
   subroutine CELL_B(previous_dynamic,previous_pitch)
     integer, intent(INOUT) :: previous_dynamic
     integer, intent(INOUT) :: previous_pitch
@@ -298,6 +298,7 @@ contains
   end subroutine CELL_B
   
 ! **********************************************************************************************************************************************************
+  ! cell C: rhythmic cell
   subroutine CELL_C(previous_dynamic,previous_pitch)
     integer, intent(INOUT) :: previous_dynamic
     integer, intent(INOUT) :: previous_pitch
