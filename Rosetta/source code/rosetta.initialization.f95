@@ -1,4 +1,4 @@
-! piano-sonata.initialization.f95
+! rosetta.initialization.f95
 
 call INIT_RANDOM_SEED() ! initializes with a random seed (using the CPU clock to randomize it) for the so that RANDOM_NUMBER outputs different results at each execution
 
