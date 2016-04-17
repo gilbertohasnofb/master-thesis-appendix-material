@@ -11,7 +11,6 @@ contains
   ! Subroutine INIT_RANDOM_SEED: selects a random value for RANDOM_SEED by using the computer clock, which assures that RANDOM will output different numbers each run
   ! Adapted from: http://fortranwiki.org/fortran/show/random_seed
   subroutine INIT_RANDOM_SEED()
-
     integer :: i, N, x
     integer, dimension(:), allocatable :: seed
 
@@ -32,7 +31,6 @@ contains
 ! Bubble sort: sorting algorithm, reorganize a vector from the smallest to the largest value
 
   subroutine BUBBLE_SORT(vector)
-
     integer, intent(INOUT), dimension(:) :: vector
     real :: aux
     integer :: i, j, vector_size
